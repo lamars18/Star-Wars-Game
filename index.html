@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars RPG Game</title>
+  <!-- Reset stylesheet -->
+ <link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+  <!-- BOOTSTRAP 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- My Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Itim|Montserrat" rel="stylesheet">
+</head>
+
+<style>
+ /*Applying CSS font and image style to body*/ 
+  body {font-family: 'Montserrat', sans-serif; background-image: url('assets/images/sw_back.jpeg');
+    content: 960px; 
+}
+  
+</style>
+
+<body>
+  <header>
+    <!--INSERT STAR WARS LOGO AT TOP-->
+    <img src="assets/images/starwars.jpeg">
+  </header>
+  <!-- Bootstrap Grid for Character, Defender, Fight and Available Players Sections-->
+   <div class="container" id="main-game-section">
+    <div class="container col-lg-12" id="characters-section">
+      <div class="container section-title">Select Your Character</div>
+    </div>
+    <div class="container col-lg-4" id="selected-character-section">
+      <div class="section-title container"></div>
+      <div id="selected-character">DEFENDER</div>
+    </div>
+        <div class="section-title container col-lg-4">Fight Section
+    	<div id="fight-section">
+      		<button class="btn" id="attack-button">Attack</button>
+      		<div class="jumbotron" id="gameMessage"></div>
+    	</div>   
+    </div>	
+    <div id="action">
+      <div class="character-section">
+        <div class="container section-title col-lg-3">
+        	<div id="defender"></div>
+        </div>	
+      </div>
+    </div>    
+    <div class="container" id="available-to-attack-section">
+      <div class="section-title"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Footer-->
+    <footer>
+        <div class = "site-footer"> 
+    
+          Copyright Shetia Lamar &copy; 
+        </div>
+    </footer>
+
+<!--     <div class="jumbotron" id="gameMessage"></div>
+ -->
+  </div>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- JavaScript for bootstrap 4 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Javascript Game logic -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
+body {
+  background-image: url('assets/images/sw_back.jpeg');
+  background-color: #C2C3C7;
+  font-family: 'Montserrat', sans-serif;
+  color: RED; 
+}
+header {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  color: red;  
+  margin-bottom: 50px; 
+  
+}
+.characterWrapper {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#gameMessage {
+  text-align: center;
+  font-size: 20px;
+  color: red; 
+}
+#choose-enemy-button {
+  visibility: hidden;
+}
+#restart-button {
+  visibility: hidden;
+}
+#turn-counter {
+  font-size: 150%;
+  color: red; 
+}
+div {
+  color: rgb(255, 94, 0); 
+  font-size: 20px; 
+}
+/*.site-footer{
+  width: 100%; 
+  max-width: 960px auto;
+  margin: 0 auto;
+  clear: both;
+  font-size: 18px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid red;
+  height: 50px;
+  padding: 50px; 
+  position: absolute;  
+  
+     
+}*/
+
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
+.character {
+  width: 160px;
+  margin: 0px 50px 0px 60px;
+  cursor: pointer;
+  display: inline-block;
+   
+}
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  
+  
+}
+.character-name {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+  color: red;
+  font-size: 18px;
+}
+.character-health {
+  text-align: center;
+  color: red; 
+  font-size: 18px;
+}
+
+/*---------------------*/
+/*      Fighting       */
+/*---------------------*/
+.attack {
+  text-align: center;
+}
+.action {
+  margin: 15px 0px;
+}
+#attack-button{
+  visibility: hidden;
+  font-size: 18px; 
+}
+.btn {
+	background: red; 
+	color: #DBD2C6;	
+}
+.enemy {
+	width: 153px;
+	margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: gold;
+  float: left;
+  
+}
+#attacker {
+  padding: 5px;
+  background-color: black;
+  color: red;
+  font-size: 18px; 
+  
+}
+.target-enemy {
+  background-color: black;
+  color: red;
+  font-size: 18px; 
+}
+
+/*---------------------*/
+/* Available Oponents  */
+/*---------------------*/
+#available-to-attack-section {
+  float: right;
+}
+#available-to-attack-section img {
+	height: 100px;
+}
+
+/*---------------------*/
+/*      Defender       */
+/*---------------------*/
+
+/*#defender {
+  width: 190px;
+  height: 160px;
+}*/
+#defender-name {
+  text-align: center;
+}
+#defender-image {
+  padding: 0px 16px;
+  margin: 3px 0px;
+}
+#defender-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*   Media Queries     */
+/*---------------------*/
+@media only screen and (max-device-width: 768px) {
+  .character {
+    display: block;
+  height: 150px;    
+  }
+  #gameMessage {
+  font-size: 12px;
+  }
+  /*.site-footer {
+    width: 100%; 
+    max-width: 768px auto;
+    margin: 0 auto;
+    clear: both;
+    font-size: 18px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid red;
+    height: 50px;
+    padding: 50px; 
+    position: absolute;
+    
+   
+    
+  }*/
+}
+@media only screen and (max-device-width: 960px){
+  .character {
+    display: block;
+  height: 250px;    
+  }
+  #gameMessage {
+  font-size: 12px;
+  }
+}
