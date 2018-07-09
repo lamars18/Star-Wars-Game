@@ -4,12 +4,12 @@ $(document).ready(function() {
 //audio clips to be referenced later
 //FYI: The "let" statement allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. 
 // "LET" is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
-let audio = new Audio('assets/audio/Super Star Wars- Return of the Jedi - Boss Attack.mp3');
-let force = new Audio('assets/audio/20_Game Over.mp3');
-let blaster = new Audio('assets/audio/blaster-firing.mp3');
-let jediKnow = new Audio('assets/audio/jedi-know.mp3');
-let lightsaber = new Audio('assets/audio/lightsaber_02.mp3');
-let chewroar = new Audio('assets/audio/chewy_roar.mp3');
+let audio = new Audio('assets/Audio/Super Star Wars- Return of the Jedi - Boss Attack.mp3');
+let force = new Audio('assets/Audio/20_Game Over.mp3');
+let blaster = new Audio('assets/Audio/blaster-firing.mp3');
+let jediKnow = new Audio('assets/Audio/jedi-know.mp3');
+let lightsaber = new Audio('assets/Audio/lightsaber_02.mp3');
+let chewroar = new Audio('assets/Audio/chewy_roar.mp3');
 
 
 //Array of Playable Characters
